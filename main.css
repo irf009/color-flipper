@@ -205,6 +205,20 @@ body {
 }
 .btns {
   display: flex;
+  justify-content: center;
+}
+.copy-btn {
+  margin-left: 1.5rem;
+}
+.copied {
+  margin-top: 1rem;
+  margin-left: 2.2rem;
+  background: #222;
+  color: #fff;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: none;
 }
 @media screen and (max-width: 560px) {
   .box {
@@ -218,5 +232,19 @@ body {
   .box h2 {
     font-size: 1.5rem;
     /* text-align: start; */
+  }
+  .btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copy-btn {
+    margin-left: 0rem;
+  }
+  .reset-btn {
+    margin-left: 0rem;
+  }
+  .copied {
+    margin-left: 0.25rem;
+    margin-top: 1.5rem;
   }
 }
